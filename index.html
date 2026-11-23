@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warung Kode - Blog Belajar Web</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================= HEADER ======================= -->
+  <header id="site-header">
+    <div class="header-brand">
+      <img src="asset/gambar-CSS.jpg" width="150px">
+      <div class="header-text">
+        <h1 id="site-title">Warung Kode</h1>
+        <p id="site-tagline">Tempat ngopi sambil belajar pemrograman web</p>
+      </div>
+    </div>
+    <div class="header-extra">
+      <p>Senin, 23 November 2026</p>
+      <a href="#" class="btn-login">Masuk</a>
+      <a href="#" class="btn-register">Daftar</a>
+    </div>
+  </header>
+
+  <!-- ======================= TOP MENU ======================= -->
+  <nav id="top-menu" aria-label="Menu utama">
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Tutorial</a>
+        <ul class="submenu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Artikel</a></li>
+      <li><a href="#">Galeri</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======================= WRAPPER UTAMA ======================= -->
+  <div id="wrapper">
+
+    <!-- ======================= BODY CONTENT ======================= -->
+    <main id="content">
+
+      <!-- Breadcrumb -->
+      <nav id="breadcrumb" aria-label="Breadcrumb">
+        <a href="#">Beranda</a> &raquo; <a href="#">Tutorial</a> &raquo; <span>CSS Dasar</span>
+      </nav>
+
+      <!-- Artikel utama -->
+      <article class="post featured">
+        <header class="post-header">
+          <h2>Mengenal Dasar-Dasar CSS untuk Pemula</h2>
+          <p class="post-meta">
+            Ditulis oleh <a href="#">Dosen Pengampu</a> |
+            <time datetime="2026-11-23">23 November 2026</time> |
+            Kategori: <a href="#">CSS</a> |
+            <a href="#">12 komentar</a>
+          </p>
+        </header>
+
+        <figure>
+          <img src="asset/tampilan css.jpg">
+          <figcaption>Gambar 1. HTML sebagai kerangka, CSS sebagai tampilan.</figcaption>
+        </figure>
+
+        <p>
+          <strong>CSS</strong> (<em>Cascading Style Sheets</em>) adalah bahasa yang digunakan untuk
+          mengatur tampilan dokumen HTML. Jika HTML ibarat kerangka bangunan, maka CSS adalah cat,
+          dekorasi, dan tata letak ruangannya. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <h3>Mengapa Harus Belajar CSS?</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+        </p>
+
+        <blockquote>
+          <p>Desain bukan hanya soal tampilan, tetapi juga soal bagaimana sesuatu bekerja.</p>
+          <cite>Pepatah para desainer</cite>
+        </blockquote>
+
+        <h3>Konsep yang Akan Dipelajari</h3>
+        <ul>
+          <li>Selector (tag, class, id)</li>
+          <li>Warna dan latar belakang</li>
+          <li>Tipografi dan font</li>
+          <li>Box model (margin, border, padding)</li>
+          <li>Layout (display, float, flexbox, grid)</li>
+        </ul>
+
+        <h3>Langkah Belajar</h3>
+        <ol>
+          <li>Pahami struktur HTML terlebih dahulu.</li>
+          <li>Hubungkan file CSS dengan HTML.</li>
+          <li>Coba ubah warna dan ukuran teks.</li>
+          <li>Atur jarak antar elemen.</li>
+          <li>Susun tata letak halaman.</li>
+        </ol>
+
+        <h3>Contoh Kode</h3>
+        <p>Berikut contoh aturan CSS sederhana:</p>
+        <pre><code>h1 {
+  color: navy;
+  font-size: 32px;
+}</code></pre>
+        <p>Pada contoh di atas, <code>h1</code> adalah selector, sedangkan <code>color</code> adalah properti.</p>
+
+        <h3>Perbandingan Teknik Layout</h3>
+        <table>
+          <caption>Teknik layout pada CSS</caption>
+          <thead>
+            <tr>
+              <th>Teknik</th>
+              <th>Dimensi</th>
+              <th>Cocok untuk</th>
+              <th>Tingkat Kesulitan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Float</td>
+              <td>1D</td>
+              <td>Teks mengelilingi gambar</td>
+              <td>Sedang</td>
+            </tr>
+            <tr>
+              <td>Flexbox</td>
+              <td>1D</td>
+              <td>Menu, kartu, rata tengah</td>
+              <td>Mudah</td>
+            </tr>
+            <tr>
+              <td>Grid</td>
+              <td>2D</td>
+              <td>Layout halaman utuh</td>
+              <td>Sedang</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Sumber: materi kuliah</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p class="read-more"><a href="#">Baca selengkapnya &raquo;</a></p>
+      </article>
+
+      <!-- Daftar artikel lain -->
+      <section id="latest-posts">
+        <h2>Artikel Terbaru</h2>
+
+        <article class="post">
+          <img src="asset/belajar css.jpg" width="250px" alt="Flexbox">
+          <div class="post-summary">
+            <h3><a href="#">Belajar Flexbox dalam 10 Menit</a></h3>
+            <p class="post-meta">20 November 2026 | Kategori: CSS</p>
+            <p>Flexbox memudahkan kita menata elemen secara horizontal maupun vertikal tanpa trik yang rumit.</p>
+            <a href="#">Selengkapnya</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img src="asset/belajar-css-flexbox-grid.webp" width="250px" alt="CSS Grid">
+          <div class="post-summary">
+            <h3><a href="#">CSS Grid: Layout Dua Dimensi</a></h3>
+            <p class="post-meta">18 November 2026 | Kategori: CSS</p>
+            <p>Grid adalah sistem tata letak paling kuat untuk membuat halaman dengan baris dan kolom.</p>
+            <a href="#">Selengkapnya</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img src="asset/CSS-Media-Queries.webp" width="250px" alt="Responsive Design">
+          <div class="post-summary">
+            <h3><a href="#">Membuat Web Responsif dengan Media Query</a></h3>
+            <p class="post-meta">15 November 2026 | Kategori: Desain Web</p>
+            <p>Agar tampilan nyaman di ponsel, tablet, maupun desktop, kita perlu memahami media query.</p>
+            <a href="#">Selengkapnya</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Galeri -->
+      <section id="gallery">
+        <h2>Galeri Inspirasi Desain</h2>
+        <div class="gallery-grid">
+          <figure><img src="asset/desain minimalis.jpg" width="300px" alt="Desain 1"><figcaption>Desain minimalis</figcaption></figure>
+          <figure><img src="asset/desain cerah.png" width="300px" alt="Desain 2"><figcaption>Desain berwarna cerah</figcaption></figure>
+          <figure><img src="asset/desain gelap.jpg" width="300px" alt="Desain 3"><figcaption>Desain gelap (dark mode)</figcaption></figure>
+          <figure><img src="asset/desain warna retro.jpg" width="300px" alt="Desain 4"><figcaption>Desain retro</figcaption></figure>
+        </div>
+      </section>
+
+      <!-- Form komentar -->
+      <section id="comments">
+        <h2>Tinggalkan Komentar</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Formulir Komentar</legend>
+
+            <p>
+              <label for="nama">Nama</label><br>
+              <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+            </p>
+            <p>
+              <label for="email">Email</label><br>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com">
+            </p>
+            <p>
+              <label for="topik">Topik</label><br>
+              <select id="topik" name="topik">
+                <option>Pertanyaan</option>
+                <option>Saran</option>
+                <option>Kritik</option>
+              </select>
+            </p>
+            <p>
+              <label for="pesan">Pesan</label><br>
+              <textarea id="pesan" name="pesan" rows="5" cols="40"></textarea>
+            </p>
+            <p>
+              <input type="checkbox" id="setuju" name="setuju">
+              <label for="setuju">Saya setuju dengan aturan komentar</label>
+            </p>
+            <p>
+              <button type="submit">Kirim Komentar</button>
+              <button type="reset">Reset</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- ======================= SIDEBAR ======================= -->
+    <aside id="sidebar">
+
+      <!-- Widget: Pencarian -->
+      <section class="widget widget-search">
+        <h3 class="widget-title">Pencarian</h3>
+        <form action="#" method="get">
+          <input type="search" name="q" placeholder="Cari artikel...">
+          <button type="submit">Cari</button>
+        </form>
+      </section>
+
+      <!-- Widget: Tentang penulis -->
+      <section class="widget widget-about">
+        <h3 class="widget-title">Tentang Penulis</h3>
+        <img src="asset/foto orang.jpg" width="150px" alt="Foto penulis">
+        <p>Halo! Saya pengajar yang suka berbagi ilmu pemrograman web kepada mahasiswa.</p>
+      </section>
+
+      <!-- Widget: Kategori -->
+      <section class="widget widget-categories">
+        <h3 class="widget-title">Kategori</h3>
+        <ul>
+          <li><a href="#">HTML</a> (12)</li>
+          <li><a href="#">CSS</a> (18)</li>
+          <li><a href="#">JavaScript</a> (9)</li>
+          <li><a href="#">Desain Web</a> (7)</li>
+          <li><a href="#">Tips &amp; Trik</a> (5)</li>
+        </ul>
+      </section>
+
+      <!-- Widget: Populer -->
+      <section class="widget widget-popular">
+        <h3 class="widget-title">Artikel Populer</h3>
+        <ol>
+          <li><a href="#">Cara Membuat Navbar Sederhana</a></li>
+          <li><a href="#">Memahami Box Model</a></li>
+          <li><a href="#">Perbedaan Class dan ID</a></li>
+          <li><a href="#">Warna di CSS: HEX, RGB, HSL</a></li>
+          <li><a href="#">Mengenal Pseudo-class</a></li>
+        </ol>
+      </section>
+
+      <!-- Widget: Tag -->
+      <section class="widget widget-tags">
+        <h3 class="widget-title">Tag</h3>
+        <p>
+          <a href="#">html</a>
+          <a href="#">css</a>
+          <a href="#">flexbox</a>
+          <a href="#">grid</a>
+          <a href="#">layout</a>
+          <a href="#">responsive</a>
+          <a href="#">warna</a>
+          <a href="#">font</a>
+        </p>
+      </section>
+
+      <!-- Widget: Newsletter -->
+      <section class="widget widget-newsletter">
+        <h3 class="widget-title">Berlangganan</h3>
+        <p>Dapatkan tutorial terbaru lewat email.</p>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Email Anda">
+          <button type="submit">Langganan</button>
+        </form>
+      </section>
+
+      <!-- Widget: Arsip -->
+      <section class="widget widget-archive">
+        <h3 class="widget-title">Arsip</h3>
+        <ul>
+          <li><a href="#">November 2026</a></li>
+          <li><a href="#">Oktober 2026</a></li>
+          <li><a href="#">September 2026</a></li>
+          <li><a href="#">Agustus 2026</a></li>
+        </ul>
+      </section>
+
+      <!-- Widget: Iklan -->
+      <section class="widget widget-ad">
+        <h3 class="widget-title">Sponsor</h3>
+        <a href="#"><img src="asset/sponsor.webp"></a>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer id="site-footer">
+
+    <div class="footer-columns">
+      <section class="footer-col">
+        <h4>Tentang Kami</h4>
+        <p>Warung Kode adalah blog edukasi untuk belajar pemrograman web dari dasar.</p>
+      </section>
+
+      <section class="footer-col">
+        <h4>Tautan Cepat</h4>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">Artikel</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h4>Ikuti Kami</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col">
+        <h4>Kontak</h4>
+        <address>
+          Jl. Contoh No. 123<br>
+          Kuningan, Jawa Barat<br>
+          Email: <a href="mailto:halo@contoh.com">halo@contoh.com</a><br>
+          Telp: 0812-3456-7890
+        </address>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Warung Kode. Dibuat untuk bahan latihan CSS.</p>
+      <p><a href="#">Kebijakan Privasi</a> | <a href="#">Syarat &amp; Ketentuan</a></p>
+    </div>
+
+  </footer>
+
+</body>
+</html>

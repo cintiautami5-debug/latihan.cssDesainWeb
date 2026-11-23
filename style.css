@@ -1,0 +1,186 @@
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    color:black;
+    line-height: 1.6;
+}
+a{
+    color:burlywood;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    color:burlywood;
+}
+#site-header#site-header{
+    background-color: rgb(134, 76, 76);
+    color: rgb(220, 220, 210);
+    padding: 25px 6%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px
+}
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+#site-header{
+    text-align: left;
+}
+.header-extra{
+    text-align: center;
+}
+#top-menu{
+    background-color: #244a9b;
+    text-align: center;
+}
+#top-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#top-menu li{
+    display: inline-block;
+    margin: 10px;
+}
+#top-menu a{
+    text-decoration: none;
+    color: black;
+}
+#top-menu.submenu li{
+    display: block;
+    margin: 5px;
+}
+#wrapper{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+#content{
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+#breadcrum{
+    margin-bottom: 20px;
+}
+#breadcrum a{
+    color: #244a9b;
+}
+.h2{
+    color:#244a9b;
+}
+.post-figure{
+    margin: 15px;
+}
+h3{
+    color: #244a9b;
+}
+#content {
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#breadcrumb {
+    margin-bottom: 20px;
+}
+
+#breadcrumb a {
+    color: #244a9b;
+}
+
+.post h2 {
+    color: #244a9b;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.post figure {
+    margin: 15px 0;
+}
+
+.post-meta {
+    color: gray;
+    font-size: 14px;
+}
+
+h3 {
+    color: #244a9b;
+}
+.gallery-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery-grid figure {
+    width: 22%;
+    margin: 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+  
+  input, textarea, select{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid#ccc;
+    border-radius: 5px;
+  }
+  input[type="checkbox"]{
+    width: auto;
+  }
+  button{
+    background-color: #244a9b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #sidebar{
+    flex: 1;
+  }
+  .widget {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.widget-title {
+    border-bottom: 2px solid #244a9b;
+    padding-bottom: 5px;
+}
+
+.widget img {
+    max-width: 100%;
+}
+
+#site-footer {
+    background-color: #172d55;
+    color: white;
+    padding: 25px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
